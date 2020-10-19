@@ -1,1 +1,151 @@
-/* Put your style information here! */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#top-navbar {
+    background-color: #0f52ba;
+    animation: fade-down 1000ms forwards;
+    opacity: 0;
+}
+
+@keyframes fade-down {
+    from {
+        opacity: 0;
+        transform: translateY(-1.25em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0em);
+    }
+}
+
+.navbar-brand img {
+    width: 1.5rem;
+    height: 1.8rem;
+    background-color: white;
+}
+
+.grow {
+    flex: 1;
+}
+
+.side {
+    overflow-y: auto;
+    animation: from-left 1000ms forwards;
+    opacity: 0;
+}
+
+@keyframes from-left {
+    from {
+        opacity: 0;
+        transform: translateX(-1.25em);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0em);
+    }
+}
+
+.main {
+    overflow-y: auto;
+    animation: from-right 1000ms forwards;
+    opacity: 0;
+}
+
+@keyframes from-right {
+    from {
+        opacity: 0;
+        transform: translateX(1.25em);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0em);
+    }
+}
+
+.font-adjust {
+    font-size: 16px;
+    font-weight: light;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+ 
+form.example input[type=text] {
+    padding: 5px;
+    font-size: 13px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+  
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 5px;
+    background: #2196F3;
+    color: white;
+    font-size: 13px;
+    border: 1px solid grey;
+    border-left: none; 
+    cursor: pointer;
+}
+  
+form.example button:hover {
+    background: #0b7dda;
+}
+  
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.container {
+    align-items: stretch;
+    justify-content: center;
+}
+
+.container-fluid {
+    display: flex;
+    margin: 0px;
+}
+
+.side {
+    flex: 1;
+}
+
+.main {
+    flex: 3;
+}
+
+.top-pane {
+    background: url(./images/book2.jpg) center fixed;
+    background-size: cover;
+    height: 300px;
+    fill-opacity: inherit;
+}
+
+.card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap: .5rem;
+}
+
+.books {
+    background: url(./images/pages.jpg) center fixed;
+    background-size: cover;
+}
+
+
+.card-img-top {
+   width: 24-px;
+   height: 200px; 
+}
+
+
